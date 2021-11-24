@@ -1,2 +1,2 @@
 # urlChecker-golang-api
-Same urlchecker in ECS in golang
+Same urlchecker in ECS Python, but in Golang
