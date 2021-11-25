@@ -23,6 +23,7 @@ type urlControllerInterface interface {
 type urlController struct{}
 
 func (uc *urlController) Check(c *gin.Context) {
+	//TODO: Need to be able to grab entire url rather than just the first one.
 	domain := c.Param("url")
 	if !services.UrlService.MalwareExists(domain) {
 		c.JSON(http.StatusOK, fmt.Sprintf("Domain '%v' not in the list", domain))
